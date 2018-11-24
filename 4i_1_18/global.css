@@ -1,0 +1,360 @@
+/* OGÓLNE */
+body{
+	width: 100%;
+	height: 100%;
+	margin:0px;
+	padding: 0px;
+	background-color: #0c0c0c;
+	font-size: 15pt;
+	font-family: Century Gothic;
+	overflow: hidden;
+}
+html{
+	width: 100%;
+	height: 100%;
+
+}
+/* OKŁADKA */
+#main{
+	width: 100%;
+	height: 100vh;
+	background-image: url("images/background.gif");
+	background-repeat: no-repeat;
+    background-position: center; 
+	background-color: #66cc66;
+	background-size: cover;
+	background-position: 400px 0px;
+	border-bottom: 1px solid black;
+}
+.arrow{
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: -50px;
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 15px;
+	width: 50px;
+	height: 35px;
+	color: black;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-align: center;
+}
+
+.arrow:hover{
+	background-image: url("images/arrow_hover.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.arrow2{
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: -55px;
+	transform: rotate(180deg);
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 15px;
+	width: 50px;
+	height: 35px;
+	color: black;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-align: center;	
+}
+.arrow2:hover{
+	background-image: url("images/arrow_hover.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#main_text{
+	position: relative;
+	top: 100px;
+	left: 100px;
+	background-image: url("images/text-background.png");
+	background-repeat: repeat;
+	width: 560px;
+	height: 160px;
+	padding: 40px;
+	padding-top: 60px;
+	font-size: 25pt;
+	font-style: italic;
+	outline: 1px  black;
+}
+#main_text p{
+	font-size: 15pt;
+	text-align: right;
+}
+/* MENU */
+#menu{
+	color:white;
+	width: 100%;
+	height: 75px;
+	padding-top:0px;
+	background-color: #66cc66;
+}
+#menu a{
+	float:right;
+	width: 150px;
+	height: 45px;
+	padding-top: 30px;
+	text-align: center;
+	margin: 0;
+}
+#menu a:hover{
+	background-color: #55bb55;
+	
+}
+#menu h3{
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	font-family: Verdana;
+	font-size: 22pt;
+	padding-top: 20px;
+	float:left;
+	width: 400px;
+	margin-left: 20px;
+	margin-right: 100px; 
+}
+
+/* STRONA GŁÓWNA / PODSTRONY */
+#index_container{
+	width: 100%;
+	height: 100vh;
+	background-color:#d0d0d0;
+
+}
+#container{
+	width:1000px;
+	margin: 0px auto;
+}
+#content{
+	width: 930px;
+	font-size: 25pt;
+	font-style: italic;
+	background-color: white;
+	height: 60%;
+	padding: 35px;
+	overflow: auto;
+}
+
+/* PANEL LOGOWANIA / REJESTRACJI */
+#login_form{
+	margin-top: 0px;
+	width: 400px;
+	height: 350px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 0px 50px ;
+}
+#login_form h5{
+	margin: 0px;
+	padding: 1px;
+}
+#login_form input{
+	display: block;
+	outline: 1px solid black;
+	padding: 15px;
+	margin: 5px;
+	width: 400px;
+	
+}
+#login_form input[type="submit"]{
+	text-align: center;
+	width: 195px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 210px;
+}
+#login_form input[type="submit"]:hover{
+	background-color: #ccc;
+	cursor:pointer;
+}
+#error_log{
+	display: block;
+	width: 400px;
+	height: 25px;
+	color: #ee0000;
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 5px;
+	margin-bottom: 15px;
+}
+a{
+	display: block;
+	width: 405px;
+	margin-top: 20px;
+	height: 25px;
+	text-decoration: none;
+	color:black;
+	font-size: 12pt;
+	text-align: right;
+	font-style: italic;
+}
+a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/* PANEL BIEGACZA*/
+#panel_menu{
+	width: 630px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+#panel_menu a{
+	display: block;
+	width: 200px;
+	height: 45px;
+	padding-top: 25px;
+	margin: 5px;
+	float:left;
+	font-size: 15pt;
+	text-align: center;
+	font-style: normal;
+	background-color: #66CC66;
+	transition: 0.3s ease;
+}
+#panel_menu a:hover{
+	text-decoration: none;
+	transform: scale(1.05,1.07);
+	
+}
+#panel_title{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-style: normal;
+}
+
+
+/* STYLIZACJA LISTA.PHP */
+#lista_error{
+	clear:both;
+	display: block;
+	font-size: 13pt;
+	width: 400px;
+	float:left;
+}
+#a_lista{
+	width: 200px;
+	outline: 1px solid black;
+	text-align: center;
+	padding: 0px;
+	padding-top: 5px;
+	margin: 30px auto;
+	background-color: #66cc66;
+	transform: scale(1,1);
+	transition: 0.2s ease;
+}
+#a_lista:hover{
+	transform: scale(1.05,1.07);
+}
+#lista{
+	width: 700px;
+	margin: 15px auto;
+}
+#lista th{
+	height: 15px;
+	text-align: left;
+	border: 1px solid black;
+	padding: 5px;
+	background-color: #66cc66;
+	margin: 0;
+}
+#lista td{
+	border: 1px solid black;
+	padding: 3px 10px;
+}
+
+/* STYL DLA DODAWANIE.PHP */
+#dodawanie_box{
+	width: 400px;
+	height: 350px;
+	margin: 0px auto;
+
+}
+#dodawanie_title{
+	width: 380px;
+	display: block;
+	margin: 10px 0;
+}
+#nowy_trening{
+	font-size: 12pt;
+	font-style: normal;
+}
+#nowy_trening input{
+	height: 35px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	border:0;
+	outline: 1px solid black;
+}
+#nowy_trening input[name="miejsce"]{
+	width: 250px;
+}
+#nowy_trening hr{
+	margin: 10px 0;
+	padding: 0;
+	width: 400px;
+	height: 2px;
+	background-color: black;
+	outline: 1px black solid;
+	border: 0;
+}
+#nowy_trening input[type="submit"]{
+	width: 140px;
+	height: 40px;
+	border: 0;
+	text-align: center;
+	padding: 0px;
+	padding-top: 0px;
+	margin-left: 260px;
+	background-color: #66cc66;
+	transform: scale(1,1);
+	transition: 0.2s ease;
+	color:white;
+	text-transform: uppercase;
+	font-style: italic;
+}
+#nowy_trening input[type="submit"]:hover{
+	transform: scale(1.05,1.07);
+}
+/* PODSUMOWANIE.PHP */
+
+#podsumowanie_content{
+	display: block;
+	font-size: 14pt;
+	font-style: normal;
+	width: 400px;
+	float:left;
+}
+#content img{
+	clear:both;
+	display: block;
+	width: 250px;
+	height: 250px;
+	float: right;
+	margin-top: -110px;
+	margin-left: 250px;
+	margin-bottom: 0px;
+}
+
+/* PANEL NAZWA UŻYTKOWNIKA STOPKA*/
+#nickname{
+	display: block;
+	width: 1000px;
+	margin: 0px auto;
+	text-align: right;
+	height: 30px;
+	font-size: 15pt;
+}
